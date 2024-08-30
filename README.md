@@ -6,7 +6,7 @@ Dans le cadre de mon apprentissage continu, je me prépare à passer la certific
 
 ### [kubectl Cheat Sheet](https://jamesdefabia.github.io/docs/user-guide/kubectl-cheatsheet/)
 
-### [Install Minikube (Mac, Linux and Windows](https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fbinary+download)
+### [Install Minikube (Mac, Linux and Windows)](https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fbinary+download)
 
 ### [Install Kubectl](https://jamesdefabia.github.io/docs/user-guide/kubectl-cheatsheet/)
 
