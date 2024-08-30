@@ -4,4 +4,16 @@ Dans le cadre de mon apprentissage continu, je me prépare à passer la certific
 
 ## Ressources
 
+### [kubectl Cheat Sheet](https://jamesdefabia.github.io/docs/user-guide/kubectl-cheatsheet/)
+
+### [Install Minikube (Mac, Linux and Windows](https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fbinary+download)
+
+### [Install Kubectl](https://jamesdefabia.github.io/docs/user-guide/kubectl-cheatsheet/)
+
 ### [Apprendre les bases de Kubernetes](https://kubernetes.io/fr/docs/tutorials/kubernetes-basics/)
+
+### [TechWorld with Nana: Kubernetes Crash Course for Absolute Beginners](https://www.youtube.com/watch?v=X48VuDVv0do)
+
+### [Techworld with Nana: Kubernetes Tutorial for Beginners [FULL COURSE in 4 Hours]](https://www.youtube.com/watch?v=X48VuDVv0do)
+
+### [Techworld with Nana: Gitlab, list of the commands of the course](https://gitlab.com/nanuchi/youtube-tutorial-series/-/blob/master/basic-kubectl-commands/cli-commands.md)
