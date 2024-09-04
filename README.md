@@ -4,6 +4,8 @@ Dans le cadre de mon apprentissage continu, je me prépare à passer la certific
 
 ## Ressources
 
+### [CKA  github resources](https://github.com/kodekloudhub/certified-kubernetes-administrator-course/blob/master/docs/01-Introduction/01-Course-Introduction.md)
+
 ### [kubectl Cheat Sheet](https://jamesdefabia.github.io/docs/user-guide/kubectl-cheatsheet/)
 
 ### [Install Minikube (Mac, Linux and Windows)](https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fbinary+download)
