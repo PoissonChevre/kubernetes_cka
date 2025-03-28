@@ -1,6 +1,6 @@
 # Udemy : [Certified Kubernetes Administrator (CKA) with Practice Tests](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/)
 
-# Dans le cadre de ma formation continue, je me prépare à obtenir la certification CKA (Certified Kubernetes Administrator) en suivant un programme complet sur Udemy.
+Dans le cadre de ma formation continue, je me prépare à obtenir la certification CKA (Certified Kubernetes Administrator) en suivant un programme complet sur Udemy.
 
 Kubernetes est un orchestrateur open-source reconnu, conçu pour automatiser le déploiement, le dimensionnement et la gestion des applications conteneurisées. Initialement créé par Google et désormais maintenu par la Cloud Native Computing Foundation (CNCF), Kubernetes est devenu un standard de facto pour l’orchestration des conteneurs dans des environnements à grande échelle.
 
