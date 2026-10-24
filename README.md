@@ -1,29 +1,75 @@
-# Udemy : [Certified Kubernetes Administrator (CKA) with Practice Tests](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/)
+# Kubernetes — CKA Training
 
-Dans le cadre de ma formation continue, je me prépare à obtenir la certification CKA (Certified Kubernetes Administrator) en suivant un programme complet sur Udemy.
+My notes and practice files from preparing the **Certified Kubernetes Administrator (CKA)** exam.
 
-Kubernetes est un orchestrateur open-source reconnu, conçu pour automatiser le déploiement, le dimensionnement et la gestion des applications conteneurisées. Initialement créé par Google et désormais maintenu par la Cloud Native Computing Foundation (CNCF), Kubernetes est devenu un standard de facto pour l’orchestration des conteneurs dans des environnements à grande échelle.
+**Status:** CKA passed (2025)
 
-Ce programme explore une gamme étendue de fonctionnalités de Kubernetes, couvrant la gestion des clusters, la configuration du stockage et du réseau, ainsi que les pratiques de sécurité et de dépannage au sein de l’écosystème Kubernetes. Mon objectif est de développer une expertise approfondie dans l’administration des clusters Kubernetes, tout en optimisant la gestion et la conception des infrastructures pour des applications modernes et évolutives.
+## What is Kubernetes?
 
-## Ressources
+Kubernetes is an open-source **container orchestrator**. It deploys, scales and manages containerized apps on a cluster of machines. Google created it; the Cloud Native Computing Foundation (CNCF) maintains it today.
 
-### [CKA  github resources](https://github.com/kodekloudhub/certified-kubernetes-administrator-course/blob/master/docs/01-Introduction/01-Course-Introduction.md)
+## Main course
 
-### [kubectl Cheat Sheet](https://jamesdefabia.github.io/docs/user-guide/kubectl-cheatsheet/)
+[Certified Kubernetes Administrator (CKA) with Practice Tests](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/) — Udemy, by Mumshad Mannambeth (KodeKloud).
 
-### [Operating etcd clusters for Kubernetes](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#backing-up-an-etcd-cluster)
+Practice: KodeKloud labs and mock exams, and the killer.sh exam simulator.
 
-### [Apprendre les bases de Kubernetes](https://kubernetes.io/fr/docs/tutorials/kubernetes-basics/)
+| # | Section | Topics |
+|---|---|---|
+| 1 | Introduction | Course overview, exam tips |
+| 2 | Core Concepts | Cluster architecture, etcd, API server, Pods, ReplicaSets, Deployments, Services, namespaces |
+| 3 | Scheduling | Labels and selectors, taints and tolerations, node affinity, resource limits, DaemonSets, static Pods |
+| 4 | Logging and Monitoring | Metrics Server, application logs |
+| 5 | Application Lifecycle Management | Rolling updates, commands and arguments, ConfigMaps, Secrets, multi-container Pods, autoscaling |
+| 6 | Cluster Maintenance | Node drain, cluster upgrade, etcd backup and restore |
+| 7 | Security | TLS certificates, kubeconfig, RBAC, service accounts, network policies |
+| 8 | Storage | Volumes, PersistentVolumes, PersistentVolumeClaims, StorageClasses |
+| 9 | Networking | CNI, cluster DNS, Ingress, Gateway API |
+| 10 | Design and Install a Cluster | Install with kubeadm |
+| 11 | Troubleshooting | Application, control plane, worker node and network failures |
 
-### [TechWorld with Nana : Kubernetes Crash Course for Absolute Beginners](https://www.youtube.com/watch?v=X48VuDVv0do)
+## Repository content
 
-### [Techworld with Nana : Kubernetes Tutorial for Beginners [FULL COURSE in 4 Hours]](https://www.youtube.com/watch?v=X48VuDVv0do)
+| Folder | Content |
+|---|---|
+| [manifests](./manifests/) | YAML written during practice tests (list below) |
+| [techworld-nana](./techworld-nana/) | Beginner tutorial by TechWorld with Nana: Minikube, kubectl basics, MongoDB demo, Ingress |
 
-### [Techworld with Nana : Gitlab, list of the commands of the course](https://gitlab.com/nanuchi/youtube-tutorial-series/-/blob/master/basic-kubectl-commands/cli-commands.md)
+### manifests/
 
-### [Install Minikube (Mac, Linux and Windows)](https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fbinary+download)
+| File | What it shows |
+|---|---|
+| [deployment.yaml](./manifests/deployment.yaml) | A basic Deployment with an environment variable |
+| [gateway-https.yaml](./manifests/gateway-https.yaml) | Gateway API: HTTPS listener with a TLS Secret |
+| [gateway-multi-host-tls.yaml](./manifests/gateway-multi-host-tls.yaml) | Gateway API: two hostnames, one certificate each |
+| [hpa.yaml](./manifests/hpa.yaml) | HorizontalPodAutoscaler on CPU, with scale-up and scale-down speed |
+| [vpa.yaml](./manifests/vpa.yaml) | VerticalPodAutoscaler with min and max resources |
+| [networkpolicy-egress.yaml](./manifests/networkpolicy-egress.yaml) | Egress allowed only to one namespace, plus DNS |
+| [pod-secret-env.yaml](./manifests/pod-secret-env.yaml) | Secret loaded as environment variables (`envFrom`) |
+| [pod-secret-volume.yaml](./manifests/pod-secret-volume.yaml) | Secret mounted as files (volume) |
 
-### [KodeKloud : Install Kubernetes from Scratch [1]](https://www.youtube.com/watch?v=uUupRagM7m0&list=PL2We04F3Y_41jYdadX55fdJplDvgNGENo)
+The course slides (PDF) stay on my machine: they belong to KodeKloud, so they are not in Git.
 
-### [Learn Linux TV : How to Build an Awesome Kubernetes Cluster using Proxmox Virtual Environment](https://www.learnlinux.tv/how-to-build-an-awesome-kubernetes-cluster-using-proxmox-virtual-environment/)
+## Resources
+
+**Official docs**
+
+- [Kubernetes documentation](https://kubernetes.io/docs/home/)
+- [kubectl quick reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/)
+- [Kubernetes basics tutorial](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
+- [Back up an etcd cluster](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#backing-up-an-etcd-cluster)
+- [Install Minikube](https://minikube.sigs.k8s.io/docs/start/)
+
+**Course notes**
+
+- [KodeKloud CKA course notes (GitHub)](https://github.com/kodekloudhub/certified-kubernetes-administrator-course)
+
+**Videos**
+
+- TechWorld with Nana: [Kubernetes Crash Course for Absolute Beginners](https://www.youtube.com/watch?v=s_o8dwzRlu4) · [Kubernetes Tutorial for Beginners (4 hours)](https://www.youtube.com/watch?v=X48VuDVv0do)
+- KodeKloud: [Install Kubernetes from Scratch](https://www.youtube.com/watch?v=uUupRagM7m0&list=PL2We04F3Y_41jYdadX55fdJplDvgNGENo)
+- Learn Linux TV: [Build a Kubernetes cluster on Proxmox](https://www.learnlinux.tv/how-to-build-an-awesome-kubernetes-cluster-using-proxmox-virtual-environment/)
+
+## Related
+
+- [My Kubernetes cheat sheets](https://github.com/PoissonChevre/devops_cheat_sheets/tree/main/k8s)

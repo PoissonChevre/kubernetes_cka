@@ -1,0 +1,20 @@
+# CKA practice: pods in space1 can only send traffic to namespace space2, plus DNS (port 53)
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: np
+  namespace: space1
+spec:
+  podSelector: {}               # All pods in the namespace
+  policyTypes:
+    - Egress
+  egress:
+    - to:                       # Rule 1: traffic to namespace space2
+        - namespaceSelector:
+            matchLabels:
+              kubernetes.io/metadata.name: space2
+    - ports:                    # Rule 2: DNS, to any destination
+        - port: 53
+          protocol: TCP
+        - port: 53
+          protocol: UDP
