@@ -26,7 +26,7 @@ This course prepares the CKA, a hands-on exam on live clusters. Practice: KodeKl
 
 ## My notes
 
-My Kubernetes cheat sheets: [devops_cheat_sheets/k8s](https://github.com/PoissonChevre/devops_cheat_sheets/tree/main/k8s)
+My Kubernetes cheat sheets: [cheatsheets/k8s](https://github.com/PoissonChevre/cheatsheets/tree/main/k8s)
 
 | Folder | Content |
 |---|---|
