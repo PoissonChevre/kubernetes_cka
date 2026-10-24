@@ -50,6 +50,10 @@ Practice: KodeKloud labs and mock exams, and the killer.sh exam simulator.
 
 The course slides (PDF) stay on my machine: they belong to KodeKloud, so they are not in Git.
 
+## Takeaways
+
+- Clear, well-structured course, with a practical lab after each topic.
+
 ## Resources
 
 **Official docs**
