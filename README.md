@@ -1,18 +1,14 @@
-# Kubernetes — CKA Training
+# Certified Kubernetes Administrator (CKA) with Practice Tests — KodeKloud
 
-My notes and practice files from preparing the **Certified Kubernetes Administrator (CKA)** exam.
+[Course page](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/) · **Instructor:** Mumshad Mannambeth (KodeKloud) · **Status:** completed, **CKA passed** (2025)
 
-**Status:** CKA passed (2025)
-
-## What is Kubernetes?
+## About
 
 Kubernetes is an open-source **container orchestrator**. It deploys, scales and manages containerized apps on a cluster of machines. Google created it; the Cloud Native Computing Foundation (CNCF) maintains it today.
 
-## Main course
+This course prepares the CKA, a hands-on exam on live clusters. Practice: KodeKloud labs and mock exams, and the killer.sh exam simulator.
 
-[Certified Kubernetes Administrator (CKA) with Practice Tests](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/) — Udemy, by Mumshad Mannambeth (KodeKloud).
-
-Practice: KodeKloud labs and mock exams, and the killer.sh exam simulator.
+## Course content
 
 | # | Section | Topics |
 |---|---|---|
@@ -28,7 +24,9 @@ Practice: KodeKloud labs and mock exams, and the killer.sh exam simulator.
 | 10 | Design and Install a Cluster | Install with kubeadm |
 | 11 | Troubleshooting | Application, control plane, worker node and network failures |
 
-## Repository content
+## My notes
+
+My Kubernetes cheat sheets: [devops_cheat_sheets/k8s](https://github.com/PoissonChevre/devops_cheat_sheets/tree/main/k8s)
 
 | Folder | Content |
 |---|---|
@@ -74,6 +72,3 @@ The course slides (PDF) stay on my machine: they belong to KodeKloud, so they ar
 - KodeKloud: [Install Kubernetes from Scratch](https://www.youtube.com/watch?v=uUupRagM7m0&list=PL2We04F3Y_41jYdadX55fdJplDvgNGENo)
 - Learn Linux TV: [Build a Kubernetes cluster on Proxmox](https://www.learnlinux.tv/how-to-build-an-awesome-kubernetes-cluster-using-proxmox-virtual-environment/)
 
-## Related
-
-- [My Kubernetes cheat sheets](https://github.com/PoissonChevre/devops_cheat_sheets/tree/main/k8s)
